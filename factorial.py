@@ -1,8 +1,9 @@
 userstring = input("Number Please: ")
 usernum = int(userstring)
-
+     
 def factorial(n):
-    return n * 3 * 2 * 1
-
-print(factorial(usernum))
-    
+	userinput = 1
+	for i in range(1, usernum + 1):
+		userinput *= i
+	return userinput
+print(factorial(usernum))    
